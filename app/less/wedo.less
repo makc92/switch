@@ -1,0 +1,42 @@
+#wedo {
+    position: relative;
+    padding: 42px 0 32px 0;
+    .col-lg-4 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        border-radius: 20px;
+        .md(margin-top, 70px);
+        transition: 1s ease-in-out;
+        &:hover {
+            background: @tgreen;
+            
+        }
+        &:first-child{
+            .md(margin-top, 40px); 
+        }
+       h4 {
+        font-weight: 700;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        
+    }
+    p{
+        margin: 15px 0;
+    }
+    .gbtn {
+        padding: 5px 19px;
+        color: #fff;
+    } 
+    }
+    .line {
+        position: absolute;
+        right: 10%;
+        top: 0;
+        width: 2px;
+        height: 12vh;
+        background: @dgray;
+    }
+    
+}

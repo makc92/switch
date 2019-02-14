@@ -1,0 +1,71 @@
+#testim {
+    position: relative;
+    .col-12 {
+        p {
+            margin-bottom: 80px;
+        }
+    }
+    .owl-carousel {
+
+        position: relative;
+
+        .owl-prev {
+            font-size: 30px;
+            position: absolute;
+            top: 15%;
+            
+        }
+        .owl-next {
+            font-size: 30px;
+            position: absolute;
+            top: 15%;
+            right: 0;
+            
+        }
+    }
+    .quote {
+        text-align: center;
+        .box {
+            max-width: 50%;
+            .md(max-width, 90%);
+            margin: auto;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            color: @dark;
+            margin: 0;
+            &+p {
+                font-weight: 700;
+                color: #ccc;
+            }
+        }
+        .profile {
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            margin-top: 20px;
+            img {
+                margin-right: 5px;
+                width: 44px;
+                height: 44px;
+            }
+        }
+    }
+    .line1 {
+        position: absolute;
+        left: 10%;
+        top: 0;
+        width: 2px;
+        height: 12vh;
+        background: @green;
+    }
+    .line2 {
+        position: absolute;
+        right: 10%;
+        top: 0;
+        width: 2px;
+        height: 12vh;
+        background: @green;
+    }
+}

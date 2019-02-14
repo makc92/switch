@@ -1,0 +1,93 @@
+#work {
+    background: @green;
+    position: relative;
+    h3 {
+        color: @tgreen;
+        &+p {
+            color: @tgreen;
+        }
+        &::after {
+            background: @tgreen;
+        }
+    }
+    .wwrap {
+        display: none;
+    }
+    .wcategory {
+        margin-top: 30px;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        .wlink {
+            padding: 5px 20px;
+            border: 0.5px solid @tgreen;
+            background: @white;
+            color: @tgreen;
+            font-weight: 400;
+            cursor: pointer;
+            &.active {
+                background: @tgreen;
+                color: #fff;
+            }
+            &:first-child {
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-left: 1px solid @tgreen;
+            }
+            &:last-child {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border-right: 1px solid @tgreen;
+            }
+        }
+    }
+    .gutter-sizer { 
+        width: 2.5%;
+        .lg-block({
+            width: 2%;
+        })
+    
+    }
+    .wbox {
+        margin-top: 2.5%;
+        width: 18%; 
+        cursor: pointer;
+        .lg-block({
+            width: 48.999%;
+            margin-top: 2%;
+        });
+        height: 160px;
+        border-radius: 5px;
+        overflow: hidden;
+        img {
+            max-width: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .gbtn{
+        background: @tgreen;
+        font-size: 18px;
+        padding: 5px 20px;
+        margin-top: 55px;
+        color: #fff;
+    }
+    .line1 {
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+        width: 2px;
+        height: 12vh;
+        background: @white;
+    }
+    .line2 {
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+        width: 2px;
+        height: 12vh;
+        background: @white;
+    }
+}
